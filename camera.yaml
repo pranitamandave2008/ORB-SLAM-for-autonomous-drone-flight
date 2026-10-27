@@ -1,0 +1,34 @@
+/**:
+  ros__parameters:
+    camera:
+      i_enable_imu: true
+      i_enable_ir: false
+      i_pipeline_type: "Stereo"
+      i_nn_type: "none"
+      i_reverse_stereo_socket_order: true
+    stereo:
+      i_output_disparity: false
+    left:
+      i_resolution: '480P'
+      i_fps: 30.0
+      i_publish_compressed: false
+      i_max_q_size: 30
+      i_fsync_continuous: true
+      r_set_man_exposure: true
+      r_exposure: 2000
+      r_iso: 400
+    right:
+      i_resolution: '480P'
+      i_fps: 30.0
+      i_publish_compressed: false
+      i_max_q_size: 30
+      i_fsync_continuous: true
+      r_set_man_exposure: true
+      r_exposure: 2000
+      r_iso: 400
+    imu:
+      i_message_type: "IMU"
+      i_sync_method: "LINEAR_INTERPOLATE_ACCEL"
+    rgb:
+      i_publish_topic: false
+      i_disable_node: true
